@@ -1,0 +1,13 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: creating a file
+      file:
+        path: /home/testfile
+        state: touch
+    - name: creating a directory
+      file:
+        path: /home/testfolder
+        state: directory
+        mode: 0655
+        owner: kul

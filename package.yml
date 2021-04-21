@@ -1,0 +1,12 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: installing ntp
+      apt:
+        name: ntp
+        state: present
+        update_cache: true
+    - name: service validation
+      service:
+        name: ntp
+        state: started

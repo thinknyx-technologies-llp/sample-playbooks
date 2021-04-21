@@ -1,0 +1,8 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: copying a file
+      copy:
+        src: /tmp/testfile/
+        dest: /home/testfolder/
+        mode: 0655
