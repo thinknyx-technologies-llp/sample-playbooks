@@ -1,0 +1,4 @@
+---
+- include: update_cache.yml
+- include: testuser.yml
+- include: testtemplate.yml

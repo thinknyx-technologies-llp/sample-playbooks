@@ -1,0 +1,7 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name:  Using template
+      template:
+        src: testfile.j2
+        dest: /tmp/testfile.txt

@@ -1,0 +1,6 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: update repository
+      apt:
+        update_cache: true
